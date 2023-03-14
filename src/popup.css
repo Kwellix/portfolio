@@ -1,0 +1,41 @@
+.portfolioItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolioItem:hover {
+    outline: 1px black solid;
+    backdrop-filter: blur(20px);
+}
+
+.portofolioItem_icon {
+    height: 125px;
+}
+
+.portofolioItem_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portofolioItem_titles {
+    margin-left: 42px;
+}
+
+.portofolioItem_titles p {
+    font-family: "DaysOne", sans-serif;
+}
+
+.portofolioItem_description {
+    font-family: "Montserrat", sans-serif;
+    width: 48%;
+    font-size: 20px;
+    text-align: justify;
+
+}
