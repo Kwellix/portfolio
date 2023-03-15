@@ -4,6 +4,16 @@ import Wallet from "./portfolio_items/Wallet";
 import Braveheart from "./portfolio_items/Braveheart";
 import LNTU from "./portfolio_items/LNTU"
 
+const HeaderButtons = () => {
+    return (
+        <div className="header_buttons">
+            <p style={{color: "black"}}>про мене</p>
+            <p>портфоліо</p>
+            <p>контакти</p>
+        </div>
+    )
+}
+
 const TechItem = (props) => {
     return (
         <div>
@@ -32,16 +42,19 @@ function App() {
     return (
         <div className="app">
             <div className="header">
-                <div className="header_buttons">
-                    <p style={{color: "black"}}>про мене</p>
-                    <p>портфоліо</p>
-                    <p>контакти</p>
+                <div className="header_buttons_text">
+                    <HeaderButtons/>
+                </div>
+                <div className="header_buttons_icon">
+                    <div className="header_buttons">
+                        <img style={{height: 35, padding: 10}} src={require("./assets/img/icons/arrow.png")}/>
+                    </div>
                 </div>
             </div>
             <div className="aboutMe">
                 <div className="aboutMe_firstBlock">
                     <div className="aboutMe_firstBlock_name">
-                        <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                        <div className="aboutMe_firstBlock_name_text">
                             <p className="aM_fB_n_myName" style={{color: "black"}}>Сергій Баранчук</p>
                             <p className="aM_fB_n_specialty" style={{color: "#4D4D4D", marginTop: "2%"}}>Frontend React Developer</p>
                         </div>
@@ -51,8 +64,8 @@ function App() {
                         верстки та створення власних дизайнів. Також, маю хороші навички аналізу та самонавчання, тому з легкістю вирішую проблеми, що виникають під час розробки, та швидко освоюю нові необхідні інструменти та засоби
                     </p>
                     <div className="aboutMe_firstBlock_englishLvlBlock">
-                        <img style={{height: 40}} src={require("./assets/img/icons/language.png")}/>
-                        <p className="aboutMe_firstBlock_description" style={{marginTop: 0, marginLeft: "max(1%, 20px)"}}>Рівень англійської мови: В2 (Upper Intermediate)</p>
+                        <img src={require("./assets/img/icons/language.png")}/>
+                        <p className="aboutMe_firstBlock_description" style={{marginTop: 0, marginLeft: "max(1%, 15px)", textAlign: "left"}}>Рівень англійської мови: В2 (Upper Intermediate)</p>
                     </div>
                 </div>
                 <div className="aboutMe_techSkills">
@@ -97,7 +110,7 @@ function App() {
                             <img src={require("./assets/img/icons/freelance.png")}/>
                             <p className="edAndWork_block_title">Фріланс</p>
                             <p className="edAndWork_block_years">2022 - 2023</p>
-                            <p className="edAndWork_block_description">Виконував індивідуальні замовлення, такі як: верстка та створення дизайну сайтів, написання скриптів/додатків/Telegram-ботів засобами мови JavaScript та платформи Node.js.</p>
+                            <p className="edAndWork_block_description">Виконання індивідуальних замовленнь (верстка та створення дизайну сайтів, написання скриптів/додатків/Telegram-ботів засобами мови JavaScript та платформи Node.js).</p>
                         </div>
                     </div>
                 </div>
@@ -122,11 +135,23 @@ function App() {
                     </div>
                 </div>
                 <div className="contacts_content">
-                    <div className="contacts_content_item">
+                    <div className="contacts_content_item" style={{marginTop: 0}}>
                         <div className="contacts_content_item_photo">
                             <img src={require("./assets/img/icons/email.png")}/>
                         </div>
                         <p className="contacts_content_item_title">s.b.tomor@gmail.com</p>
+                    </div>
+                    <a href="https://t.me/Kwellix" target="_blank" className="contacts_content_item">
+                        <div className="contacts_content_item_photo">
+                            <img src={require("./assets/img/icons/telegram.png")}/>
+                        </div>
+                        <p className="contacts_content_item_title">@Kwellix</p>
+                    </a>
+                    <div className="contacts_content_item">
+                        <div className="contacts_content_item_photo">
+                            <img src={require("./assets/img/icons/phone.png")}/>
+                        </div>
+                        <p className="contacts_content_item_title">+380 67 306 24 60</p>
                     </div>
                 </div>
             </div>

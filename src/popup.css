@@ -1,41 +1,89 @@
+/*MOBILE*/
+@media (max-width: 750px) {
+    .portfolioItem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 6%;
+        outline: 1px black solid;
+        transition: background-color 400ms ease;
+    }
+
+    .portfolioItem:hover {
+        background-color: rgba(0, 0, 100, 0.1);
+    }
+
+    .portfolioItem_description {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .portfolioItem_icon {
+        height: 75px;
+        padding-right: 20px;
+    }
+
+    .portfolioItem_text {
+        padding-bottom: 15px;
+    }
+
+    .textTitle {
+        font-family: "DaysOne", sans-serif;
+        font-size: 20px;
+    }
+
+}
+
+/*DESKTOP*/
+@media (min-width: 750px) {
+    .portfolioItem {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .portfolioItem:hover {
+        outline: 1px black solid;
+        backdrop-filter: blur(20px);
+    }
+
+    .portfolioItem_description {
+        width: 48%;
+        font-size: 20px;
+    }
+
+    .portfolioItem_icon {
+        height: 125px;
+    }
+
+    .portfolioItem_titles {
+        margin-left: 42px;
+    }
+
+    .textTitle {
+        font-family: "DaysOne", sans-serif;
+        font-size: 27px;
+    }
+
+}
+
 .portfolioItem {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
     cursor: pointer;
-    text-decoration: none;
     color: inherit;
-}
-
-.portfolioItem:hover {
-    outline: 1px black solid;
-    backdrop-filter: blur(20px);
-}
-
-.portofolioItem_icon {
-    height: 125px;
-}
-
-.portofolioItem_text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
-.portofolioItem_titles {
-    margin-left: 42px;
+
+.portfolioItem_text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
-.portofolioItem_titles p {
+.portfolioItem_titles p {
     font-family: "DaysOne", sans-serif;
 }
 
-.portofolioItem_description {
+.portfolioItem_description {
     font-family: "Montserrat", sans-serif;
-    width: 48%;
-    font-size: 20px;
     text-align: justify;
-
 }

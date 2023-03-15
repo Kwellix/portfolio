@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 html,
 body,
 #root,
@@ -29,6 +25,316 @@ body,
     url('./assets/fonts/DaysOne-Regular.ttf') format('truetype');
 }
 
+/*MOBILE*/
+@media (max-width: 1200px) {
+    .header_buttons_text {
+        display: none;
+    }
+
+    .aboutMe_firstBlock_name {
+        flex-direction: column-reverse;
+    }
+
+    .aboutMe_firstBlock_name_profilePhoto {
+        height: 50vw;
+        width: 50vw;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        align-self: center;
+    }
+
+    .aM_fB_n_myName {
+        font-size: 30px;
+    }
+
+    .aM_fB_n_specialty {
+        font-size: 22px;
+    }
+
+    .aboutMe_firstBlock_description {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .blockTitle,
+    .edAndWork_block_blockTitle {
+        font-size: 22px;
+        margin-bottom: 4%;
+    }
+
+    .techItem_photo {
+        height: 75px;
+    }
+
+    .techItem_photo img {
+        height: 75px;
+    }
+
+    .techItem_description {
+        height: 75px;
+        width: 75px;
+        margin-top: -96px;
+    }
+
+    .aboutMe_skillsGrid {
+        grid-template-columns: repeat(auto-fit, 97px);
+    }
+
+    .techItem_description_title {
+        font-size: 14px;
+    }
+
+    .aboutMe_firstBlock_englishLvlBlock img {
+        height: 30px;
+    }
+
+    .softSkill_title {
+        font-size: 18px;
+        margin: 3% 0 3% 0;
+    }
+
+    .softSkill img,
+    .aboutMe_edAndWork img {
+        height: 85px;
+    }
+
+    .softSkill_description {
+        font-size: 17px;
+    }
+
+    .aboutMe_education_block {
+        border-right-width: 0;
+        border-bottom-width: 1px;
+    }
+
+    .aboutMe_education_block,
+    .aboutMe_work_block {
+        padding: 4.4% 5.7% 5.7% 5.7%;
+    }
+
+    .edAndWork_block_title {
+        margin: 3% 0 2% 0;
+        font-size: 18px;
+    }
+
+    .edAndWork_block_years {
+        font-size: 16px;
+    }
+
+    .edAndWork_block_description {
+        font-size: 17px;
+        margin-top: 2%;
+    }
+
+    .portfolio_header_title,
+    .contacts_header_title {
+        font-family: "DaysOne", sans-serif;
+        font-size: 28px;
+    }
+
+    .portfolio_header_wrapper,
+    .contacts_header_wrapper {
+        padding: 2% 5.6% 2% 5.6%;
+    }
+
+    .portfolio_content,
+    .contacts_content {
+        padding: 5.6%;
+    }
+
+    .contacts_content_item_photo img {
+        height: 25px;
+    }
+
+    .contacts_content_item_title {
+        font-size: 20px;
+    }
+
+    .contacts_content_item_photo {
+        width: 32px;
+        margin-right: 4%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts_content_item {
+        margin-top: 6.3%;
+    }
+
+    .aboutMe_firstBlock_name_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*DESKTOP*/
+@media (min-width: 1200px) {
+    .header_buttons {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .aboutMe {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .header_buttons_icon {
+        display: none;
+    }
+
+    .aboutMe_firstBlock_name {
+        flex-direction: row;
+    }
+
+    .aboutMe_firstBlock_name_profilePhoto {
+        height: 15.5vw;
+        width: 15.5vw;
+        margin-right: max(5.5%, 25px);
+    }
+
+    .aboutMe_firstBlock_name {
+        justify-content: space-between;
+    }
+
+    .aM_fB_n_myName {
+        font-size: 47px;
+    }
+
+    .aM_fB_n_specialty {
+        font-size: 37px;
+    }
+
+    .aboutMe_firstBlock_description {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    .blockTitle,
+    .edAndWork_block_blockTitle {
+        font-size: 37px;
+        margin-bottom: 10%;
+    }
+
+    .techItem_photo {
+        height: 105px;
+    }
+
+    .techItem_photo img {
+        height: 105px;
+    }
+
+    .techItem_description {
+        height: 105px;
+        width: 105px;
+        margin-top: -126px;
+    }
+
+    .aboutMe_skillsGrid {
+        grid-template-columns: repeat(auto-fit, 127px);
+    }
+
+    .techItem_description_title {
+        font-size: 18px;
+    }
+
+    .aboutMe_firstBlock_englishLvlBlock img {
+        height: 40px;
+    }
+
+    .softSkill_title {
+        font-size: 27px;
+        margin: 21px 0 21px 0;
+    }
+
+    .softSkill img,
+    .aboutMe_edAndWork img {
+        height: 125px;
+    }
+
+    .softSkill_description {
+        font-size: 20px;
+    }
+
+    .aboutMe_edAndWork {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutMe_education_block {
+        border-right-width: 1px;
+        border-bottom-width: 0;
+    }
+
+    .aboutMe_education_block,
+    .aboutMe_work_block {
+        padding: 8.8% 11.4% 11.4% 11.4%;
+    }
+
+    .edAndWork_block_title {
+        font-size: 27px;
+        margin: 21px 0 13px 0;
+    }
+
+    .edAndWork_block_years {
+        font-size: 24px;
+    }
+
+    .edAndWork_block_description {
+        font-size: 20px;
+        margin-top: 13px;
+    }
+
+    .portfolio_header_wrapper,
+    .contacts_header_wrapper {
+        padding: 2% 4.8% 2% 4.8%;
+        margin: 0 8% 0 8%;
+    }
+
+    .portfolio_header_title,
+    .contacts_header_title {
+        font-family: "DaysOne", sans-serif;
+        font-size: 47px;
+    }
+
+    .portfolio_content,
+    .contacts_content {
+        padding: 4.8%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .contacts_content_item_photo img {
+        height: 48px;
+    }
+
+    .contacts_content_item_title {
+        font-size: 27px;
+    }
+
+    .contacts_content_item_photo {
+        width: 58px;
+        margin-right: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts_content_item {
+        margin-top: 3%;
+    }
+
+    .aboutMe_firstBlock_name_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.header_buttons_icon {
+    cursor: pointer;
+}
+
 .header {
     border-style: solid;
     border-top-width: 0;
@@ -39,8 +345,6 @@ body,
 }
 
 .header_buttons {
-    margin-left: 5.1%;
-    margin-right: 5.1%;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -70,8 +374,6 @@ body,
 }
 
 .aboutMe {
-    margin-left: 5.1%;
-    margin-right: 5.1%;
     border-style: solid;
     border-top-width: 0;
     border-left-width: 1px;
@@ -92,46 +394,32 @@ body,
 
 .aboutMe_firstBlock_name {
     font-family: "DaysOne", sans-serif;
-    flex-direction: row;
     display: flex;
-    justify-content: space-between;
 }
 
-.aM_fB_n_myName {
-    font-size: 47px;
-}
-
-.aM_fB_n_specialty {
-    font-size: 37px;
-}
 
 .aboutMe_firstBlock_name_profilePhoto {
-    height: 15.5vw;
     border-radius: 1000px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    margin-right: max(5.5%, 25px);
     filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.25));
 }
 
 .aboutMe_firstBlock_description {
     font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
     text-align: justify;
-    line-height: 42px;
-    margin-top: max(5%, 25px);
+    margin-top: max(5%, 15px);
 }
 
 .aboutMe_firstBlock_englishLvlBlock {
     display: flex;
     align-items: center;
-    margin-top: max(3%, 25px);
+    margin-top: max(3%, 15px);
 }
 
 .blockTitle {
     font-family: "DaysOne", sans-serif;
-    font-size: 37px;
     margin-bottom: 4%;
 }
 
@@ -151,33 +439,25 @@ body,
     width: 100%;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, 127px);
     column-gap: 4%;
     row-gap: calc(100vw * 0.04);
 }
 
 .techItem_photo {
     border-width: 1px;
-    border-color: black;
+    border-color: gray;
     border-style: solid;
-    height: 105px;
     padding: 10px;
     width: fit-content;
 }
 
-.techItem_photo img {
-    height: 105px;
-}
 
 .techItem_description {
-    height: 105px;
-    width: 105px;
     position: relative;
-    margin-top: -126px;
     margin-left: 1px;
     background-color: rgba(0, 0, 0, 0);
     opacity: 0;
-    transition: opacity 200ms ease;
+    transition: opacity 250ms ease;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -196,7 +476,6 @@ body,
     color: white;
     font-family: "DaysOne", sans-serif;
     text-align: center;
-    font-size: 18px;
 }
 
 .aboutMe_softSkills_grid {
@@ -215,40 +494,25 @@ body,
     flex-direction: column;
 }
 
-.softSkill img,
-.aboutMe_edAndWork img {
-    height: 125px;
-}
-
 .softSkill_title {
     font-family: "DaysOne", sans-serif;
-    font-size: 27px;
-    margin: 21px 0 21px 0;
 }
 
 .softSkill_description {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
     text-align: justify;
 }
 
 .aboutMe_edAndWork {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(2, 1fr);
 }
 
-.aboutMe_education_block,
-.aboutMe_work_block {
-    padding: 8.8% 11.4% 11.4% 11.4%;
-}
 
 .aboutMe_education_block {
     border-style: solid;
     border-top-width: 0;
     border-left-width: 0;
-    border-right-width: 1px;
-    border-bottom-width: 0;
     border-color: black;
 }
 
@@ -261,29 +525,22 @@ body,
 
 .edAndWork_block_title {
     font-family: "DaysOne", sans-serif;
-    font-size: 27px;
-    margin: 21px 0 13px 0;
     text-align: center;
     width: 80%;
 }
 
 .edAndWork_block_years {
     font-family: "DaysOne", sans-serif;
-    font-size: 24px;
     color: #4D4D4D;
 }
 
 .edAndWork_block_description {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    margin-top: 13px;
     text-align: center;
 }
 
 .edAndWork_block_blockTitle {
     font-family: "DaysOne", sans-serif;
-    font-size: 37px;
-    margin-bottom: 10%;
 }
 
 .portfolio_header,
@@ -298,8 +555,6 @@ body,
 
 .portfolio_header_wrapper,
 .contacts_header_wrapper {
-    margin: 0 5.1% 0 5.1%;
-    padding: 2% 5.1% 2% 5.1%;
     border-style: solid;
     border-top-width: 0;
     border-left-width: 1px;
@@ -310,49 +565,24 @@ body,
     align-items: center;
 }
 
-.portfolio_header_title,
-.contacts_header_title {
-    font-family: "DaysOne", sans-serif;
-    font-size: 47px;
-}
-
-
 .portfolio_content,
 .contacts_content {
-    padding: 5.1% 5.1% 5.1% 5.1%;
-    margin-left: 5.1%;
-    margin-right: 5.1%;
     border-style: solid;
     border-top-width: 0;
     border-left-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 0;
     border-color: black;
-}
-
-.textTitle {
-    font-family: "DaysOne", sans-serif;
-    font-size: 27px;
-    margin: 21px 0 13px 0;
 }
 
 .contacts_content_item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: darkblue;
+    text-decoration: none;
+    color: inherit;
 }
 
 .contacts_content_item_title {
     font-family: "DaysOne", sans-serif;
-    font-size: 27px;
-}
-
-.contacts_content_item_photo {
-    width: 58px;
-    margin-right: 4%;
-}
-
-.contacts_content_item_photo img {
-    height: 48px;
 }
