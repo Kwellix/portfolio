@@ -6,6 +6,7 @@
         padding: 6%;
         outline: 1px black solid;
         transition: background-color 400ms ease;
+        margin-top: 5%;
     }
 
     .portfolioItem:hover {
@@ -34,6 +35,44 @@
     .portfolioItem_icon_popup {
         height: 75px;
     }
+
+    .portfolioItem_titles_popup {
+        margin-left: 4%;
+    }
+
+    .portfolioPopup {
+        backdrop-filter: blur(15px);
+    }
+
+    .closeIcon {
+        top: calc(100vw * 0.03 - 25px);
+        margin: -35px -30px -35px -35px;
+        height: 20px;
+    }
+
+    .portfolioPopup_description_text {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .portfolioItem_text_popup {
+        margin-bottom: 3%;
+    }
+
+    .portfolioPopup_content {
+        padding: 5.6%;
+    }
+
+    .portfolioPopup_description_imgRight,
+    .portfolioPopup_description_imgLeft {
+        margin-bottom: 2%;
+    }
+
+    .portfolioPopup_description_technologies {
+        font-size: 22px;
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
 }
 
 /*DESKTOP*/
@@ -42,6 +81,7 @@
         flex-direction: row;
         align-items: center;
         transition: background-color 300ms ease;
+        padding: 2.4%;
     }
 
     .portfolioItem:hover {
@@ -51,7 +91,7 @@
 
     .portfolioItem_description {
         width: 48%;
-        font-size: 20px;
+        font-size: 21px;
     }
 
     .portfolioItem_icon {
@@ -71,6 +111,43 @@
         font-size: 27px;
     }
 
+    .portfolioItem_titles_popup {
+        margin-left: 2%;
+    }
+
+    .portfolioPopup {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    .portfolioPopup_bg {
+        margin: 3% 8% 3% 8%;
+    }
+
+    .closeIcon {
+        top: calc(100vw * 0.03 - 35px);
+        margin: -35px -35px -35px -35px;
+        height: 27px;
+    }
+
+    .portfolioPopup_description_text {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .portfolioItem_text_popup {
+        margin-bottom: 2%;
+    }
+
+    .portfolioPopup_content {
+        padding: 4%;
+    }
+
+    .portfolioPopup_description_technologies {
+        font-size: 37px;
+        margin-bottom: 2%;
+        margin-top: 3%;
+    }
 }
 
 .portfolioItem {
@@ -80,6 +157,13 @@
     justify-content: space-between;
 }
 
+
+.portfolioItem_text_popup {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -30px;
+}
 
 .portfolioItem_text {
     display: flex;
@@ -115,46 +199,64 @@
 }
 
 .portfolioPopup {
-    height: 87vh;
-    width: 92vw;
+    height: 100vh;
+    width: 100vw;
     margin-right: calc(100vw * 0.01);
     display: flex;
     overflow-y: scroll;
     flex-direction: column;
     -webkit-overflow-scrolling: touch;
-    -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
-    backdrop-filter: blur(50px);
     border: 1px black solid;
-    position: relative;
 }
 
 .portfolioPopup_bg {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.75);
+    position: relative;
+    -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
 }
 
-.portfolioPopup::-webkit-scrollbar {
-    display: none;
-}
-
-.portfolioPopup_content {
-    padding: 3%;
-    margin-top: -30px;
-}
-
-.portfolioItem_titles_popup {
-    margin-left: 2%;
-}
 
 .closeIcon {
     position: sticky;
-    height: 27px;
-    left: 97%;
-    top: calc(100vw * 0.03);
+    left: calc(97% + 35px);
     cursor: pointer;
     opacity: 30%;
     transition: opacity 300ms ease;
+    padding: 35px;
 }
 
 .closeIcon:hover {
     opacity: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.portfolioPopup_description_text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.portfolioPopup_description_imgCenter {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.portfolioPopup_description_imgRight {
+    margin-left: 2%;
+    margin-top: 1%;
+    float: right;
+}
+
+.portfolioPopup_description_imgLeft {
+    margin-right: 2%;
+    margin-top: 2%;
+    float: left;
+}
+
+.portfolioPopup_description_technologies {
+    font-family: "DaysOne", sans-serif;
+}
+
+.portfolioPopup_description {
+    overflow: hidden;
 }

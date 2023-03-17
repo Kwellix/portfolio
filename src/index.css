@@ -302,9 +302,15 @@ body,
         font-size: 47px;
     }
 
-    .portfolio_content,
+
     .contacts_content {
         padding: 4.8%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .portfolio_content {
+        padding: 2.4%;
         margin-left: 8%;
         margin-right: 8%;
     }

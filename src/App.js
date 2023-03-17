@@ -4,19 +4,7 @@ import ARBI from "./portfolio_items/ARBI";
 import Wallet from "./portfolio_items/Wallet";
 import Braveheart from "./portfolio_items/Braveheart";
 import LNTU from "./portfolio_items/LNTU"
-
-const TechItem = (props) => {
-    return (
-        <div>
-            <div className="techItem_photo">
-                <img src={props.data.icon}/>
-            </div>
-            <div className="techItem_description">
-                <p className="techItem_description_title">{props.data.title}</p>
-            </div>
-        </div>
-    )
-}
+import TechItem from "./components/TechItem";
 
 const SoftSkill = (props) => {
     return (
@@ -58,8 +46,10 @@ function App() {
                         </div>
                         <img className="aboutMe_firstBlock_name_profilePhoto" src={require("./assets/img/profile.png")}/>
                     </div>
-                    <p className="aboutMe_firstBlock_description">Привіт! Мене звати Сергій. Я - фронтенд розробник, який націлений на створення сучасних, зручних та привабливих сайтів та веб-додатків. Маю досвід адаптивної верстки під десктопні та мобільні пристрої різних розмірів, Pixel Perfect
-                        верстки та створення власних дизайнів. Також, маю хороші навички аналізу та самонавчання, тому з легкістю вирішую проблеми, що виникають під час розробки, та швидко освоюю нові необхідні інструменти та технології.
+                    <p className="aboutMe_firstBlock_description">Привіт! Мене звати Сергій. Я - фронтенд розробник, який націлений на створення сучасних, зручних та привабливих сайтів та
+                        веб-додатків. Маю досвід адаптивної верстки під десктопні та мобільні пристрої різних розмірів, Pixel Perfect
+                        верстки та створення власних дизайнів. Також, маю хороші навички аналізу та самонавчання, тому з легкістю вирішую проблеми, що виникають під час розробки, та швидко освоюю нові
+                        необхідні інструменти та технології.
                     </p>
                     <div className="aboutMe_firstBlock_englishLvlBlock">
                         <img src={require("./assets/img/icons/language.png")}/>
@@ -108,7 +98,8 @@ function App() {
                             <img src={require("./assets/img/icons/freelance.png")}/>
                             <p className="edAndWork_block_title">Фріланс</p>
                             <p className="edAndWork_block_years">2022 - 2023</p>
-                            <p className="edAndWork_block_description">Виконання індивідуальних замовленнь (верстка та створення дизайну сайтів, написання скриптів/додатків/Telegram-ботів засобами мови JavaScript та платформи Node.js).</p>
+                            <p className="edAndWork_block_description">Виконання індивідуальних замовленнь (верстка та створення дизайну сайтів, написання скриптів/додатків/Telegram-ботів засобами
+                                мови JavaScript та платформи Node.js).</p>
                         </div>
                     </div>
                 </div>
