@@ -1,18 +1,9 @@
+import React from "react";
 import {techSkills, expSkills, softSkills} from "./assets/skillsData";
 import ARBI from "./portfolio_items/ARBI";
 import Wallet from "./portfolio_items/Wallet";
 import Braveheart from "./portfolio_items/Braveheart";
 import LNTU from "./portfolio_items/LNTU"
-
-const HeaderButtons = () => {
-    return (
-        <div className="header_buttons">
-            <p style={{color: "black"}}>про мене</p>
-            <p>портфоліо</p>
-            <p>контакти</p>
-        </div>
-    )
-}
 
 const TechItem = (props) => {
     return (
@@ -38,16 +29,23 @@ const SoftSkill = (props) => {
 }
 
 function App() {
+    const scrollToPortfolio = () => {
+        const element = document.getElementById('portfolio');
+        if (element) element.scrollIntoView({behavior: 'smooth'});
+    };
+    const scrollToContacts = () => {
+        const element = document.getElementById('contacts');
+        if (element) element.scrollIntoView({behavior: 'smooth'});
+    };
     document.title = "Сергій Баранчук | Портфоліо"
     return (
         <div className="app">
             <div className="header">
                 <div className="header_buttons_text">
-                    <HeaderButtons/>
-                </div>
-                <div className="header_buttons_icon">
                     <div className="header_buttons">
-                        <img style={{height: 35, padding: 10}} src={require("./assets/img/icons/arrow.png")}/>
+                        <p style={{color: "black"}}>про мене</p>
+                        <p onClick={scrollToPortfolio}>портфоліо</p>
+                        <p onClick={scrollToContacts}>контакти</p>
                     </div>
                 </div>
             </div>
@@ -61,7 +59,7 @@ function App() {
                         <img className="aboutMe_firstBlock_name_profilePhoto" src={require("./assets/img/profile.png")}/>
                     </div>
                     <p className="aboutMe_firstBlock_description">Привіт! Мене звати Сергій. Я - фронтенд розробник, який націлений на створення сучасних, зручних та привабливих сайтів та веб-додатків. Маю досвід адаптивної верстки під десктопні та мобільні пристрої різних розмірів, Pixel Perfect
-                        верстки та створення власних дизайнів. Також, маю хороші навички аналізу та самонавчання, тому з легкістю вирішую проблеми, що виникають під час розробки, та швидко освоюю нові необхідні інструменти та засоби
+                        верстки та створення власних дизайнів. Також, маю хороші навички аналізу та самонавчання, тому з легкістю вирішую проблеми, що виникають під час розробки, та швидко освоюю нові необхідні інструменти та технології.
                     </p>
                     <div className="aboutMe_firstBlock_englishLvlBlock">
                         <img src={require("./assets/img/icons/language.png")}/>
@@ -115,7 +113,7 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className="portfolio">
+            <div className="portfolio" id="portfolio">
                 <div className="portfolio_header">
                     <div className="portfolio_header_wrapper">
                         <p className="portfolio_header_title">Портфоліо</p>
@@ -128,7 +126,7 @@ function App() {
                     <LNTU/>
                 </div>
             </div>
-            <div className="contacts">
+            <div className="contacts" id="contacts">
                 <div className="contacts_header">
                     <div className="contacts_header_wrapper">
                         <p className="contacts_header_title">Контакти</p>

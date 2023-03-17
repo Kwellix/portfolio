@@ -26,10 +26,7 @@ body,
 }
 
 /*MOBILE*/
-@media (max-width: 1200px) {
-    .header_buttons_text {
-        display: none;
-    }
+@media (max-width: 1000px) {
 
     .aboutMe_firstBlock_name {
         flex-direction: column-reverse;
@@ -134,7 +131,7 @@ body,
 
     .portfolio_header_wrapper,
     .contacts_header_wrapper {
-        padding: 2% 5.6% 2% 5.6%;
+        padding: 15px 5.6% 15px 5.6%;
     }
 
     .portfolio_content,
@@ -147,7 +144,7 @@ body,
     }
 
     .contacts_content_item_title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .contacts_content_item_photo {
@@ -167,10 +164,21 @@ body,
         justify-content: center;
         align-items: center;
     }
+
+    .header_buttons p {
+        padding: 22px 5px 22px 5px;
+        cursor: pointer;
+        font-family: "DaysOne", sans-serif;
+        font-size: 18px;
+        transition: color 300ms ease;
+        color: #8b8b8c;
+        margin: 0 2% 0 2%;
+        user-select: none;
+    }
 }
 
 /*DESKTOP*/
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     .header_buttons {
         margin-left: 8%;
         margin-right: 8%;
@@ -179,10 +187,6 @@ body,
     .aboutMe {
         margin-left: 8%;
         margin-right: 8%;
-    }
-
-    .header_buttons_icon {
-        display: none;
     }
 
     .aboutMe_firstBlock_name {
@@ -329,6 +333,20 @@ body,
         flex-direction: column;
         justify-content: center;
     }
+
+    .header_buttons p {
+        padding: 26px 15px 26px 15px;
+        cursor: pointer;
+        font-family: "DaysOne", sans-serif;
+        font-size: 23px;
+        transition: color 300ms ease;
+        color: #8b8b8c;
+        margin: 0 2% 0 2%;
+    }
+
+    .header_buttons p:hover {
+        color: black;
+    }
 }
 
 .header_buttons_icon {
@@ -359,19 +377,6 @@ body,
     border-color: black;
 }
 
-.header_buttons p {
-    padding: 26px 15px 26px 15px;
-    cursor: pointer;
-    font-family: "DaysOne", sans-serif;
-    font-size: 23px;
-    transition: color 300ms ease;
-    color: #8b8b8c;
-    margin: 0 2% 0 2%;
-}
-
-.header_buttons p:hover {
-    color: black;
-}
 
 .aboutMe {
     border-style: solid;

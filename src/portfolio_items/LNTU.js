@@ -12,7 +12,7 @@ const LNTU = () => {
                             <p className="edAndWork_block_years" style={{marginTop: 5}}>2022</p>
                         </div>
                     </div>
-                    <p className="portfolioItem_description">Повноцінний редизайн сайту Луцького націо-нального технічого університету та верстка макету.</p>
+                    <p className="portfolioItem_description">Повноцінний редизайн сайту Луцького національного технічого університету та верстка макету.</p>
                 </div>
             }
         >
