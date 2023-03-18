@@ -2,7 +2,8 @@ import Popup from "reactjs-popup"
 import React from "react";
 import TechItem from "../components/TechItem";
 
-const ARBI = () => {
+const ARBI = (props) => {
+    let text = props.data
     return (
         <Popup
             modal
@@ -12,11 +13,11 @@ const ARBI = () => {
                     <div className="portfolioItem_text">
                         <img className="portfolioItem_icon" src={require("../assets/img/portfolio/ARBI.png")}/>
                         <div className="portfolioItem_titles">
-                            <p className="textTitle">ARBI</p>
-                            <p className="edAndWork_block_years" style={{marginTop: 5}}>2022 - 2023</p>
+                            <p className="textTitle">{text.title}</p>
+                            <p className="edAndWork_block_years" style={{marginTop: 5}}>{text.year}</p>
                         </div>
                     </div>
-                    <p className="portfolioItem_description">ARBI - це повноцінний веб-додаток для автоматизації процесу торгівлі на криптовалютних біржах, створений за допомогою стеку MERN. </p>
+                    <p className="portfolioItem_description">{text.shortDesc}</p>
                 </div>
             }
         >
@@ -28,46 +29,25 @@ const ARBI = () => {
                             <div className="portfolioItem_text_popup">
                                 <img className="portfolioItem_icon_popup" src={require("../assets/img/portfolio/ARBI.png")}/>
                                 <div className="portfolioItem_titles_popup">
-                                    <p className="textTitle">ARBI</p>
-                                    <p className="edAndWork_block_years" style={{marginTop: 5}}>2022 - 2023</p>
+                                    <p className="textTitle">{text.title}</p>
+                                    <p className="edAndWork_block_years" style={{marginTop: 5}}>{text.year}</p>
                                 </div>
                             </div>
                             <div className="portfolioPopup_description">
-                                <p className="portfolioPopup_description_text">ARBI - це веб-додаток, який допомагає виявляти арбітражні зв'язки на криптобіржах, а також між ними.
-                                    Він дозволяє швидко та ефективно
-                                    знаходити можливості для заробітку у криптовалютній сфері. Одними з ключових функцій ARBI є пошук
-                                    арбітражних зв'язків як між внутрішніми ринками централізованих та децентралізованих бірж, так і всередині кожного окремого ринку. Це дозволяє користувачам ARBI
-                                    знайти
-                                    потенційні можливості для заробітку на усіх ринках, що дозволяє максимізувати їх прибуток.</p>
+                                <p className="portfolioPopup_description_text">{text.desc1}</p>
                                 <img className="portfolioPopup_description_imgCenter" src={require("./ARBI/ARBI_arbitrage.gif")}/>
                                 <img style={{width: "min(100%, 500px)"}} className="portfolioPopup_description_imgRight" src={require("./ARBI/wbt.png")}/>
-                                <p className="portfolioPopup_description_text">ARBI забезпечує високий рівень безпеки за допомогою того, що лише авторизовані користувачі мають доступ до
-                                    функціоналу
-                                    додатку. Дані користувачів добре захищені
-                                    завдяки системі шифрування даних (CryptoJS), яка дозволяє зберігати інформацію в базі даних в зашифрованому вигляді. Для ARBI були створені скрипти, які дозволяють
-                                    виконувати торгівельні операції з швидкістю, недосяжною для звичайної людини (див. скріншот з біржі).
-                                    Це дозволяє користувачам ARBI реалізувати
-                                    свій
-                                    потенціал та максимізувати свій прибуток.
-                                    ARBI заснований на стаку MERN (MongoDB, Express, React та Node.js), що забезпечує масштабованість, стабільність та продуктивність додатку.
-                                </p>
+                                <p className="portfolioPopup_description_text">{text.desc2}                                </p>
                                 <img style={{width: "min(100%, 690px)"}} className="portfolioPopup_description_imgLeft" src={require("./ARBI/ARBI_adaptive.gif")}/>
-                                <p className="portfolioPopup_description_text" style={{marginTop: "1%"}}>
-                                    Крім того, фронтенд складова ARBI має адаптивну верстку, що дозволяє користувачам зручно використовувати його з будь-якого пристрою.
-                                    В цілому, ARBI є потужним та надійним інструментом для пошуку арбітражних зв'язків на криптовалютному ринку, який дозволяє користувачам ефективно
-                                    використовувати
-                                    можливості для заробітку на різних ринках. ARBI - це додаток, який стане незамінним помічником для будь-якого трейдера, який бажає максимізувати свій прибуток.</p>
+                                <p className="portfolioPopup_description_text" style={{marginTop: "1.5%"}}>                                    {text.desc3}</p>
                             </div>
-                            <p className="portfolioPopup_description_technologies">Використані технології</p>
+                            <p className="portfolioPopup_description_technologies">{text.skills}</p>
                             <div className="aboutMe_skillsGrid" style={{rowGap: "max(calc(100vw * 0.025), 20px)"}}>
                                 {techSkills.map(skill => {
                                     return <TechItem data={skill}/>
                                 })}
                             </div>
-                            <p style={{fontStyle: "italic", fontWeight: "bold", marginTop: "4%"}} className="portfolioPopup_description_text">На даний момент фінальна версія ARBI
-                                знаходиться в
-                                розробці та
-                                тестуванні.</p>
+                            <p style={{fontStyle: "italic", fontWeight: "bold", marginTop: "4%"}} className="portfolioPopup_description_text">{text.inDev}</p>
                         </div>
                     </div>
                 </div>

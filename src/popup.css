@@ -44,6 +44,10 @@
         backdrop-filter: blur(15px);
     }
 
+    .portfolioPopup_bg {
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
     .closeIcon {
         top: calc(100vw * 0.03 - 25px);
         margin: -35px -30px -35px -35px;
@@ -72,6 +76,10 @@
         font-size: 22px;
         margin-bottom: 4%;
         margin-top: 4%;
+    }
+
+    .portfolioPopup_description_link {
+        font-size: 20px;
     }
 }
 
@@ -112,7 +120,7 @@
     }
 
     .portfolioItem_titles_popup {
-        margin-left: 2%;
+        margin-left: 2.5%;
     }
 
     .portfolioPopup {
@@ -122,6 +130,7 @@
 
     .portfolioPopup_bg {
         margin: 3% 8% 3% 8%;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 
     .closeIcon {
@@ -145,8 +154,12 @@
 
     .portfolioPopup_description_technologies {
         font-size: 37px;
-        margin-bottom: 2%;
+        margin-bottom: 3%;
         margin-top: 3%;
+    }
+
+    .portfolioPopup_description_link {
+        font-size: 26px;
     }
 }
 
@@ -210,7 +223,6 @@
 }
 
 .portfolioPopup_bg {
-    background-color: rgba(255, 255, 255, 0.75);
     position: relative;
     -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
 }
@@ -227,12 +239,39 @@
 
 .closeIcon:hover {
     opacity: 100%;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .portfolioPopup_description_text {
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
+}
+
+.portfolioPopup_description_link {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    display: flex;
+    font-weight: bold;
+    margin-top: 4%;
+    width: 94%;
+    outline: 1px black solid;
+    justify-content: center;
+    padding: 3%;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+.portfolioPopup_description_link:hover {
+    background-color: rgba(0, 0, 100, 0.1);
+}
+
+a, a:hover, a:visited {
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: white;
 }
 
 .portfolioPopup_description_imgCenter {

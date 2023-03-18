@@ -144,7 +144,7 @@ body,
     }
 
     .contacts_content_item_title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contacts_content_item_photo {
@@ -173,6 +173,13 @@ body,
         transition: color 300ms ease;
         color: #8b8b8c;
         margin: 0 2% 0 2%;
+        user-select: none;
+    }
+
+    .languageSelector {
+        right: 6%;
+        margin-top: 90px;
+        font-size: 14px;
         user-select: none;
     }
 }
@@ -310,7 +317,7 @@ body,
     }
 
     .portfolio_content {
-        padding: 2.4%;
+        padding: 2.9%;
         margin-left: 8%;
         margin-right: 8%;
     }
@@ -352,6 +359,12 @@ body,
 
     .header_buttons p:hover {
         color: black;
+    }
+
+    .languageSelector {
+        right: 2.7%;
+        padding-top: 31px;
+        font-size: 20px;
     }
 }
 
@@ -493,6 +506,7 @@ body,
     width: 100%;
     display: grid;
     justify-content: space-between;
+    align-items: flex-start;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 6%;
     row-gap: calc(100vw * 0.06);
@@ -596,4 +610,21 @@ body,
 
 .contacts_content_item_title {
     font-family: "DaysOne", sans-serif;
+}
+
+.languageSelector {
+    position: absolute;
+    font-family: "DaysOne", sans-serif;
+    color: #8b8b8c;
+    transition: color 300ms ease;
+    cursor: pointer;
+}
+
+.languageSelector:hover {
+    color: black;
+}
+
+.languageSelector_wrapper {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
 }
