@@ -140,7 +140,7 @@ function App() {
             <div className="contacts" id="contacts">
                 <div className="contacts_header">
                     <div className="contacts_header_wrapper">
-                        <p className="contacts_header_title">{lang.contacs}</p>
+                        <p className="contacts_header_title">{lang.contacts}</p>
                     </div>
                 </div>
                 <div className="contacts_content">
