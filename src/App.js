@@ -133,8 +133,8 @@ function App() {
                 <div className="portfolio_content">
                     <ARBI data={lang.ARBI}/>
                     <Wallet data={lang.Wallet}/>
-                    <Braveheart data={lang.Braveheart}/>
                     <LNTU data={lang.LNTU}/>
+                    <Braveheart data={lang.Braveheart}/>
                 </div>
             </div>
             <div className="contacts" id="contacts">
