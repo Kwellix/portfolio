@@ -22,11 +22,11 @@ const techSkills = [
     {
         title: "Figma",
         icon: require("./img/tech/figma.png")
-    },
+    }/*,
     {
         title: "Photoshop",
         icon: require("./img/tech/photoshop.png")
-    }
+    }*/
 ]
 
 const expSkills = [
@@ -55,8 +55,8 @@ const expSkills = [
         icon: require("./img/tech/redux.png")
     },
     {
-        title: "Redux Toolkit",
-        icon: require("./img/tech/reduxToolkit.png")
+        title: "PostgreSQL",
+        icon: require("./img/tech/postgresql.png")
     },
     {
         title: "Firebase",

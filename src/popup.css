@@ -92,7 +92,8 @@
         padding: 2.4%;
     }
 
-    .portfolioItem:hover {
+    .portfolioItem:hover,
+    #contacts_telegram:hover {
         outline: 1px black solid;
         background-color: rgba(0, 0, 100, 0.1);
     }
@@ -212,8 +213,8 @@
 }
 
 .portfolioPopup {
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     margin-right: calc(100vw * 0.01);
     display: flex;
     overflow-y: scroll;
@@ -271,7 +272,6 @@ a, a:hover, a:visited {
     border: none;
     text-decoration: none;
     color: inherit;
-    -webkit-tap-highlight-color: white;
 }
 
 .portfolioPopup_description_imgCenter {
