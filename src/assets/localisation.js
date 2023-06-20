@@ -44,6 +44,15 @@ export default localisation = {
             skills: "Використані технології",
             inDev: "На даний момент фінальна версія ARBI знаходиться в розробці та тестуванні."
         },
+        GRID: {
+            title: "Магазин GRID",
+            stack: "Next.js, TypeScript",
+            year: "2023",
+            shortDesc: "Прототип веб-сайту для магазину одягу GRID.",
+            desc1: "Прототип веб-сайту для магазину одягу GRID був створений з допомогою таких технологій, як Next.js 13 та TypeScript. Розроблений веб-сайт поєднує в собі гарний, зрозумілий, зручний та функціональний інтерфейс користувача.",
+            desc2: "Користувачеві доступні усі необхідні для онлайн магазину функції, такі як формування кошику замовлення, фільтрація списку продукції за необхідними параметрами, можливість додавати товар в закладки, система оформлення замовлення онлайн, та багато інших функцій.",
+            skills: "Використані технології",
+        },
         Wallet: {
             title: "Гаманець",
             stack: "React Native, Firebase",
@@ -54,6 +63,22 @@ export default localisation = {
             skills: "Використані технології",
             download: "Завантажити"
         },
+        LNTU: {
+            title: "Вебсайт ЛНТУ",
+            stack: "React",
+            year: "2022",
+            shortDesc: "Повноцінний редизайн та верстка макету сайту Луцького національного технічного університету.",
+            desc1: "В навчальних цілях, було проведено повний редизайн та верстку прототипу сайту Луцького національного технічного університету.",
+            skills: "Використані технології"
+        },
+        STSU: {
+            title: "Архів документації",
+            stack: "React, TypeScript",
+            year: "2023",
+            shortDesc: "Веб-клієнт для системи пошуку в архіві документації фінансового підприємства.",
+            desc1: "Для фінансового підприємства був розроблений користувацький веб-клієнт для взаємодії з архівом внутрішньої документації, що представлений у вигляді бази даних та файлів, розміщених на сервері.",
+            skills: "Використані технології"
+        },
         Braveheart: {
             title: "Braveheart",
             stack: "JavaScript, HTML5 Canvas",
@@ -63,14 +88,6 @@ export default localisation = {
             desc2: "Гра розроблена за допомогою \"чистого\" JavaScript та HTML Canvas, а усі механіки, класи, обробники подій, ті інші складові гри були написані «з нуля». Braveheart має по-справжньому захоплюючу геймплейну механіку та наростаючий рівень складності, а тому гравцю буде необхідно постійно вдосконалювати власні навички та стикатися з новими викликами.",
             skills: "Використані технології",
             download: "Зіграти в Braveheart"
-        },
-        LNTU: {
-            title: "Вебсайт ЛНТУ",
-            stack: "React",
-            year: "2022",
-            shortDesc: "Повноцінний редизайн та верстка макету сайту Луцького національного технічного університету.",
-            desc1: "В навчальних цілях, було проведено повний редизайн та верстку прототипу сайту Луцького національного технічного університету.",
-            skills: "Використані технології"
         },
         contacts: "Контакти",
         linkedin: "Профіль LinkedIn",
@@ -120,6 +137,15 @@ export default localisation = {
             skills: "Technologies used",
             inDev: "The final version of ARBI is currently under development and testing."
         },
+        GRID: {
+            title: "GRID Store",
+            stack: "Next.js, TypeScript",
+            year: "2023",
+            shortDesc: "A prototype website for the GRID clothing store.",
+            desc1: "The prototype website for the GRID clothing store was created using technologies such as Next.js 13 and TypeScript. The developed website combines a visually appealing, intuitive, user-friendly, and functional user interface.",
+            desc2: "Users have access to all the necessary features for an online store, including shopping cart creation, product filtering based on desired parameters, the ability to add items to favorites, online order processing system, and many other functionalities.",
+            skills: "Technologies Used",
+        },
         Wallet: {
             title: "Wallet",
             stack: "React Native, Firebase",
@@ -130,6 +156,22 @@ export default localisation = {
             skills: "Technologies Used",
             download: "Download"
         },
+        LNTU: {
+            title: "LNTU website",
+            stack: "React",
+            year: "2022",
+            skills: "Technologies used",
+            shortDesc: "Full remake of the Lutsk National Technical University website.",
+            desc1: "For educational purposes, a complete redesign of the website of Lutsk National Technical University was conducted, and a prototype layout was created."
+        },
+        STSU: {
+            title: "Documentation Archive",
+            stack: "React, TypeScript",
+            year: "2023",
+            shortDesc: "Web client for a financial enterprise's documentation archive search system.",
+            desc1: "A custom web client was developed for a financial enterprise to interact with an internal documentation archive, which is presented as a database and files hosted on the server.",
+            skills: "Technologies Used"
+        },
         Braveheart: {
             title: "Braveheart",
             stack: "JavaScript, HTML5 Canvas",
@@ -139,14 +181,6 @@ export default localisation = {
             desc2: "The game was developed using 'pure' JavaScript and HTML Canvas, and all mechanics, classes, event handlers, and other components of the game were written from scratch. Braveheart features truly captivating gameplay mechanics and a growing level of difficulty, requiring the player to constantly improve their skills and face new challenges.",
             skills: "Technologies used",
             download: "Play Braveheart"
-        },
-        LNTU: {
-            title: "LNTU website",
-            stack: "React",
-            year: "2022",
-            skills: "Technologies used",
-            shortDesc: "Full remake of the Lutsk National Technical University website.",
-            desc1: "For educational purposes, a complete redesign of the website of Lutsk National Technical University was conducted, and a prototype layout was created."
         },
         contacts: "Contacts",
         linkedin: "LinkedIn profile",

@@ -25,24 +25,33 @@ const Wallet = (props) => {
                 <div className="portfolioPopup">
                     <div className="portfolioPopup_bg">
                         <div className="portfolioPopup_content">
-                            <img className="closeIcon" onClick={close} src={require("../../assets/img/icons/close.png")}/>
+                            <img className="closeIcon" onClick={close}
+                                 src={require("../../assets/img/icons/close.png")}/>
                             <div className="portfolioItem_text_popup">
-                                <img className="portfolioItem_icon_popup" src={require("../../assets/img/portfolio/Wallet.png")}/>
+                                <img className="portfolioItem_icon_popup"
+                                     src={require("../../assets/img/portfolio/Wallet.png")}/>
                                 <div className="portfolioItem_titles_popup">
                                     <p className="textTitle">{text.title}</p>
                                     <p className="edAndWork_block_years" style={{marginTop: 5}}>{text.year}</p>
                                 </div>
                             </div>
                             <div className="portfolioPopup_description">
-                                <img style={{width: "min(100%, 350px)"}} className="portfolioPopup_description_imgRight" src={require("./stats.gif")}/>
-                                <img style={{width: "min(100%, 350px)", marginLeft: "3%"}} className="portfolioPopup_description_imgRight" src={require("./transactions.gif")}/>
+                                <img style={{width: "min(100%, 350px)"}} className="portfolioPopup_description_imgRight"
+                                     src={require("./stats.gif")}/>
+                                <img style={{width: "min(100%, 350px)", marginLeft: "3%"}}
+                                     className="portfolioPopup_description_imgRight"
+                                     src={require("./transactions.gif")}/>
                                 <p className="portfolioPopup_description_text">{text.desc1}                                </p>
                                 <p className="portfolioPopup_description_text">{text.desc2}                                </p>
                                 <div style={{display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
-                                    <img style={{width: "min(100%, 350px)"}} className="portfolioPopup_description_imgCenter" src={require("./plot.gif")}/>
-                                    <img style={{width: "min(100%, 350px)", marginLeft: "2%", marginRight: "2%"}} className="portfolioPopup_description_imgCenter"
+                                    <img style={{width: "min(100%, 350px)"}}
+                                         className="portfolioPopup_description_imgCenter" src={require("./plot.gif")}/>
+                                    <img style={{width: "min(100%, 350px)", marginLeft: "2%", marginRight: "2%"}}
+                                         className="portfolioPopup_description_imgCenter"
                                          src={require("./settings.gif")}/>
-                                    <img style={{width: "min(100%, 350px)"}} className="portfolioPopup_description_imgCenter" src={require("./pincode.gif")}/>
+                                    <img style={{width: "min(100%, 350px)"}}
+                                         className="portfolioPopup_description_imgCenter"
+                                         src={require("./pincode.gif")}/>
                                 </div>
                             </div>
                             <p className="portfolioPopup_description_technologies">{text.skills}</p>
@@ -87,10 +96,6 @@ const techSkills = [
     {
         title: "Expo",
         icon: require("../../assets/img/tech/expo.png")
-    },
-    {
-        title: "npm",
-        icon: require("../../assets/img/tech/npm.png")
     },
     {
         title: "Figma",

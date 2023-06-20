@@ -25,9 +25,11 @@ const ARBI = (props) => {
                 <div className="portfolioPopup">
                     <div className="portfolioPopup_bg">
                         <div className="portfolioPopup_content">
-                            <img className="closeIcon" onClick={close} src={require("../../assets/img/icons/close.png")}/>
+                            <img className="closeIcon" onClick={close}
+                                 src={require("../../assets/img/icons/close.png")}/>
                             <div className="portfolioItem_text_popup">
-                                <img className="portfolioItem_icon_popup" src={require("../../assets/img/portfolio/ARBI.png")}/>
+                                <img className="portfolioItem_icon_popup"
+                                     src={require("../../assets/img/portfolio/ARBI.png")}/>
                                 <div className="portfolioItem_titles_popup">
                                     <p className="textTitle">{text.title}</p>
                                     <p className="edAndWork_block_years" style={{marginTop: 5}}>{text.year}</p>
@@ -35,12 +37,17 @@ const ARBI = (props) => {
                             </div>
                             <div className="portfolioPopup_description">
                                 <p className="portfolioPopup_description_text">{text.desc1}</p>
-                                <img className="portfolioPopup_description_imgCenter" src={require("./ARBI_arbitrage.gif")}/>
-                                <img style={{width: "min(100%, 500px)"}} className="portfolioPopup_description_imgRight" src={require("./wbt.png")}/>
+                                <img className="portfolioPopup_description_imgCenter"
+                                     src={require("./ARBI_arbitrage.gif")}/>
+                                <img style={{width: "min(100%, 500px)"}} className="portfolioPopup_description_imgRight"
+                                     src={require("./wbt.png")}/>
                                 <p className="portfolioPopup_description_text">{text.desc2}                                </p>
-                                <img style={{width: "min(100%, 690px)"}} className="portfolioPopup_description_imgLeft" src={require("./ARBI_adaptive.gif")}/>
-                                <p className="portfolioPopup_description_text" style={{marginTop: "1.5%"}}>{text.desc3}</p>
-                                <img className="portfolioPopup_description_imgCenter" src={require("./ARBI_mobile.png")}/>
+                                <img style={{width: "min(100%, 690px)"}} className="portfolioPopup_description_imgLeft"
+                                     src={require("./ARBI_adaptive.gif")}/>
+                                <p className="portfolioPopup_description_text"
+                                   style={{marginTop: "1.5%"}}>{text.desc3}</p>
+                                <img className="portfolioPopup_description_imgCenter"
+                                     src={require("./ARBI_mobile.png")}/>
 
                             </div>
                             <p className="portfolioPopup_description_technologies">{text.skills}</p>
@@ -49,7 +56,8 @@ const ARBI = (props) => {
                                     return <TechItem data={skill} key={skill.title}/>
                                 })}
                             </div>
-                            <p style={{fontStyle: "italic", fontWeight: "bold", marginTop: "4%"}} className="portfolioPopup_description_text">{text.inDev}</p>
+                            <p style={{fontStyle: "italic", fontWeight: "bold", marginTop: "4%"}}
+                               className="portfolioPopup_description_text">{text.inDev}</p>
                         </div>
                     </div>
                 </div>
@@ -88,10 +96,6 @@ const techSkills = [
     {
         title: "REST API",
         icon: require("../../assets/img/tech/restAPI.png")
-    }, ,
-    {
-        title: "npm",
-        icon: require("../../assets/img/tech/npm.png")
     },
     {
         title: "Git",

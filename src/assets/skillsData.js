@@ -20,6 +20,10 @@ const techSkills = [
         icon: require("./img/tech/reactNative.png")
     },
     {
+        title: "TypeScript",
+        icon: require("./img/tech/typescript.jpg")
+    },
+    {
         title: "Figma",
         icon: require("./img/tech/figma.png")
     }/*,
@@ -30,6 +34,10 @@ const techSkills = [
 ]
 
 const expSkills = [
+    {
+        title: "Next.js 13",
+        icon: require("./img/tech/nextjs.png")
+    },
     {
         title: "Express.js",
         icon: require("./img/tech/express.js.png")
