@@ -43,36 +43,44 @@ const expSkills = [
         icon: require("./img/tech/express.js.png")
     },
     {
-        title: "Axios",
-        icon: require("./img/tech/axios.png")
-    },
-    {
-        title: "REST API",
-        icon: require("./img/tech/restAPI.png")
-    },
-    {
-        title: "npm",
-        icon: require("./img/tech/npm.png")
-    },
-    {
-        title: "Git",
-        icon: require("./img/tech/git.png")
+        title: "MobX",
+        icon: require("./img/tech/mobx.png")
     },
     {
         title: "Redux",
         icon: require("./img/tech/redux.png")
     },
     {
+        title: "REST API",
+        icon: require("./img/tech/restAPI.png")
+    },
+    {
+        title: "Axios",
+        icon: require("./img/tech/axios.png")
+    },
+    {
         title: "PostgreSQL",
         icon: require("./img/tech/postgresql.png")
+    },
+    {
+        title: "MongoDB",
+        icon: require("./img/tech/mongoDB.png")
     },
     {
         title: "Firebase",
         icon: require("./img/tech/firebase.png")
     },
     {
-        title: "MongoDB",
-        icon: require("./img/tech/mongoDB.png")
+        title: "Expo",
+        icon: require("./img/tech/expo.png")
+    },
+    {
+        title: "Git",
+        icon: require("./img/tech/git.png")
+    },
+    {
+        title: "npm",
+        icon: require("./img/tech/npm.png")
     },
     {
         title: "Victory Charts",
@@ -81,10 +89,6 @@ const expSkills = [
     {
         title: "Linux CLI",
         icon: require("./img/tech/linuxCLI.png")
-    },
-    {
-        title: "Expo",
-        icon: require("./img/tech/expo.png")
     },
     {
         title: "HTML Canvas",
